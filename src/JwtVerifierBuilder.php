@@ -41,9 +41,13 @@ class JwtVerifierBuilder
      *
      * @param string $issuer The issuer URI
      * @return JwtVerifierBuilder
+     * @throws \Exception
      */
-    public function setIssuer(string $issuer)
+    public function setIssuer($issuer)
     {
+        if (is_string($issuer) == false) {
+            throw  new \Exception('Issuer Must be a string');
+        }
         $this->issuer = $issuer;
 
         return $this;

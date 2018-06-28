@@ -55,12 +55,15 @@ class JwtVerifier
     protected $adaptor;
 
     public function __construct(
-        string $issuer,
+        $issuer,
         DiscoveryMethod $discovery = null,
         Adaptor $adaptor = null,
         Request $request = null,
         array $claimsToValidate = []
     ) {
+        if (is_string($issuer) == false) {
+            throw  new \Exception('Issuer Must be a string');
+        }
         $this->issuer = $issuer;
         $this->discovery = $discovery ?: new Oauth;
         $this->adaptor = $adaptor ?: AutoDiscover::getAdaptor();
