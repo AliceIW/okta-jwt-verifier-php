@@ -1,12 +1,12 @@
 {
-    "name": "okta/jwt-verifier",
-    "description": "A verifier library for working with Okta JWT's",
+    "name": "aliceiw/jwt-verifier",
+    "description": "Test Fork From okta/jwt-verifier, compatible with PHP 5.6",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Brian Retterer",
-            "email": "brian.retterer@okta.com"
+            "name": "Aliceiw84@gmail.com",
+            "email": "aliceiw84@gmail.com"
         }
     ],
     "autoload": {
