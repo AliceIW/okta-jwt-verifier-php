@@ -1,5 +1,5 @@
 {
-    "name": "aliceiw/jwt-verifier",
+    "name": "okta/jwt-verifier",
     "description": "Test Fork From okta/jwt-verifier, compatible with PHP 5.6",
     "type": "library",
     "license": "Apache-2.0",
